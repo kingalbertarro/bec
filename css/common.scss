@@ -74,6 +74,6 @@
   figure {
     display: block;
     width: 100%;
-    img { width: 100%; }
+    img { overflow: hidden; width: 100%; }
   }
 }
