@@ -397,3 +397,176 @@
     }
   }
 }
+#sns {
+  .sns-content {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: (230px/2) 0 (160px/2);
+    position: relative;
+    .blog-content {
+      display: block;
+      float: left;
+      margin-right: (190px/2);
+      overflow: hidden;
+      position: relative;
+      width: (1170px/2);
+      h2 {
+        color: #4e5157;
+        font-size: (40px/2);
+        font-weight: bold;
+        line-height: (40px/2);
+        border-bottom: 1px solid #9c9c9c;
+        margin-bottom: (30px/2);
+        padding: 0 0 (26px/2) (95px/2);
+        position: relative;
+        &:before {
+          background-image: url('../images/common/icn-blog.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          content: '';
+          display: block;
+          height: (45px/2);
+          left: 15px;
+          position: absolute;
+          top: 0px;
+          width: (45px/2);
+        }
+      }
+      span {
+        display: block;
+        color: #5a5a5a;
+        font-size: (26px/2);
+        line-height: (48px/2);
+      }
+      .blog-list {
+        display: block;
+        margin: (60px/2) auto 0;
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        width: (1125px/2);
+        .blog-item {
+          display: block;
+          margin-bottom: (120px/2);
+          overflow: hidden;
+          &:last-chile { margin-bottom: 0; }
+          .blog-cover {
+            display: block;
+            float: left;
+            overflow: hidden;
+            margin-right: (40px/2);
+            width: (568px/2);
+            img { width: 100%; }
+          }
+          .blog-details {
+            display: block;
+            float: left;
+            overflow: hidden;
+            width: (512px/2);
+            h3 {
+              font-size: (48px/2);
+              font-weight: bold;
+              line-height: (48px/2);
+              margin-bottom: (50px/2);
+            }
+            p {
+              display: -webkit-box;
+              font-size: (30px/2);
+              line-height: (48px/2);
+              -webkit-line-clamp: 5;
+              -webkit-box-orient: vertical;
+              margin-bottom: (40px/2);
+              overflow: hidden;
+              width: 100%;
+            }
+            .btn {
+              background-color: #377dd4;
+              color: #fff;
+              display: block;
+              float: right;
+              font-size: (24px/2);
+              line-height: (24px/2);
+              margin: 0;
+              padding: 10px 8px;
+              text-align: center;
+              transition: .3s;
+              &:hover { opacity: .8; }
+            }
+          }
+        }
+      }
+    }
+    .fb-content {
+      display: block;
+      float: right;
+      position: relative;
+      width: (760px/2);
+      h2 {
+        color: #4e5157;
+        font-size: (40px/2);
+        font-weight: bold;
+        line-height: (40px/2);
+        border-bottom: 1px solid #9c9c9c;
+        margin-bottom: (30px/2);
+        padding: 0 0 (26px/2) (95px/2);
+        position: relative;
+        &:before {
+          background-image: url('../images/common/icn-fb.png');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          content: '';
+          display: block;
+          height: (53px/2);
+          left: 10px;
+          position: absolute;
+          top: -3px;
+          width: (53px/2);
+        }
+      }
+      span {
+        display: block;
+        color: #5a5a5a;
+        font-size: (26px/2);
+        line-height: (48px/2);
+        margin-bottom: (40px/2);
+      }
+    }
+  }
+}
+#insta-feed {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 0 (90px/2);
+  position: relative;
+  .insta-title {
+    display: block;
+    height: (70px/2);
+    margin: 0 auto (55px/2);
+    width: (337px/2);
+  }
+}
+#google-map {
+  figure {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    img { width: 100%; }
+  }
+}
+#footer {
+  background-color: #eee;
+  display: block;
+  padding: (160px/2) 0 (60px/2);
+  .copyright {
+    display: block;
+    font-size: (30px/2);
+    line-height: (30px/2);
+    text-align: center;
+  }
+}
