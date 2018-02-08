@@ -1,0 +1,170 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 1150px; }
+
+#header {
+  margin-top: 32px; }
+  #header #header-con {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 911px; }
+    #header #header-con .logo-header {
+      display: block;
+      float: left;
+      width: 309px; }
+      #header #header-con .logo-header img {
+        width: 100%; }
+    #header #header-con .links {
+      display: block;
+      float: right;
+      overflow: hidden;
+      width: 382px; }
+      #header #header-con .links .btn {
+        border-radius: 4px;
+        display: block;
+        color: #fff;
+        float: left;
+        font-size: 13.5px;
+        line-height: 13.5px;
+        margin-right: 9.5px;
+        padding: 13px 0;
+        position: relative;
+        text-align: center;
+        transition: .3s;
+        width: 121px; }
+        #header #header-con .links .btn:last-child {
+          margin-right: 0; }
+        #header #header-con .links .btn:hover {
+          opacity: .8; }
+        #header #header-con .links .btn:after {
+          content: '\203A';
+          font-size: 20px;
+          position: absolute; }
+      #header #header-con .links .primary {
+        background-color: #25529a; }
+      #header #header-con .links .secondary {
+        background-color: #e86562; }
+      #header #header-con .links .tertiary {
+        background-color: #ff9a00; }
+
+.nav {
+  display: block;
+  margin: 16px auto;
+  width: 911px; }
+  .nav .nav-menu {
+    display: block;
+    margin-left: 7px;
+    overflow: hidden; }
+    .nav .nav-menu .nav-menu-items {
+      border-left: 1px dotted #000;
+      border-top: 1px solid #fff;
+      display: block;
+      padding: 0 19px;
+      float: left; }
+      .nav .nav-menu .nav-menu-items:last-child {
+        border-right: 1px dotted #000; }
+      .nav .nav-menu .nav-menu-items a {
+        color: #3a3a3a;
+        font-size: 13.5px;
+        line-height: 13.5px; }
+
+#banner {
+  display: block;
+  width: 100%; }
+  #banner figure {
+    display: block;
+    width: 100%; }
+    #banner figure img {
+      overflow: hidden;
+      width: 100%; }
+
+#introduction {
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 70px 0 112px; }
+  #introduction h1 {
+    color: #009ae5;
+    font-size: 29px;
+    line-height: 29px;
+    margin-bottom: 30px;
+    text-align: center; }
+  #introduction p {
+    color: #6a6a6a;
+    font-size: 15px;
+    line-height: 35px;
+    text-align: center; }
+  #introduction .features {
+    display: block;
+    margin: 20px auto 0;
+    overflow: hidden;
+    width: 900px; }
+    #introduction .features .features-items {
+      display: block;
+      float: left;
+      margin-right: 73.25px;
+      width: 170px; }
+      #introduction .features .features-items:last-child {
+        margin-right: 0; }
+      #introduction .features .features-items figure {
+        display: block;
+        margin-bottom: 11px; }
+        #introduction .features .features-items figure img {
+          width: 100%; }
+      #introduction .features .features-items span {
+        color: #6a6a6a;
+        display: block;
+        font-size: 15px;
+        line-height: 15px;
+        margin-bottom: 9px;
+        text-align: center; }
+      #introduction .features .features-items h2 {
+        color: #009ae5;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center; }
+
+#campus {
+  background-color: #ecf8fe;
+  display: block;
+  margin: 0;
+  overflow: hidden;
+  padding: 55px 0 90px; }
+  #campus h2 {
+    color: #4d4d4d;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center; }
+    #campus h2 span {
+      font-size: 42.5px;
+      line-height: 42.5px; }
+  #campus .campus-list {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 1150px; }
+    #campus .campus-list .campus-list-items {
+      background: #000;
+      border-radius: 5px;
+      display: block;
+      float: left;
+      margin: 0 23px 0 0;
+      overflow: hidden;
+      padding: 0;
+      width: 360px; }
+      #campus .campus-list .campus-list-items figure {
+        display: block;
+        margin: 0;
+        overflow: hidden; }
+        #campus .campus-list .campus-list-items figure img {
+          display: block;
+          object-fit: cover;
+          width: 100%; }
+      #campus .campus-list .campus-list-items article {
+        display: block;
+        padding: 10px; }
+
+/*# sourceMappingURL=common.css.map */
