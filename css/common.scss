@@ -362,18 +362,32 @@
     line-height: (30px/2);
     margin: 0 auto;
     padding: (40px/2) 0;
+    position: relative;
     text-align: center;
     transition: .3s;
     width: (620px/2);
-    &:hover {
-      background-color: #9c9b9b;
-      color: #fff;
+    &:after {
+      background-image: url('../images/common/chevron-grey.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: '';
+      display: block;
+      height: (24px/2);
+      position: absolute;
+      right: (20px/2);
+      top: 40%;
+      width: (14px/2);
     }
   }
   .more {
+    bottom: (32px/2);
+    display: block;
+    height: (18px/2);
     position: absolute;
-    bottom: 0;
-    right: 0;
+    right: (50px/2);
+    width: (23px/2);
+    img { width: 100%; }
   }
   .abroad-list {
     display: block;
@@ -389,6 +403,7 @@
       float: left;
       margin: 0 (50px/2) (135px/2) 0;
       overflow: hidden;
+      position: relative;
       width: (610px/2);
       &:nth-child(3n+3) { margin-right: 0; }
       figure {
