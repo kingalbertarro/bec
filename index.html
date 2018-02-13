@@ -7,9 +7,7 @@
 
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/common.min.css">
-  <!--<script src="//code.jquery.com/jquery-2.2.3.min.js"></script>-->
- <script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
- <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+ <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body id="top">
@@ -34,9 +32,9 @@
          <img src="images/common/logo.png" alt="">
       </figure>
       <div class="links">
-        <a href="" class="btn primary">無料見積</a>
-        <a href="" class="btn secondary">お問い合わせ</a>
-        <a href="" class="btn tertiary">お申し込み</a>
+        <a href="" class="btn primary"><span>無料見積</span></a>
+        <a href="" class="btn secondary"><span>お問い合わせ</span></a>
+        <a href="" class="btn tertiary"><span>お申し込み</span></a>
       </div>
     </section> <!-- // #header-con -->
   </div>
@@ -63,7 +61,7 @@
 
 <div id="contents-wrap"> <!-- #contents-wrap -->
   <div id="main-contents"> <!-- #main-contents -->
-    <section id="introduction"> <!-- introduction -->
+    <section id="introduction" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="650" data-aos-anchor-placement="top-bottom"> <!-- introduction -->
       <div class="container">
         <h1>リゾートエリアでしっかり学べるBayside English Cebu</h1>
         <p>
@@ -226,6 +224,7 @@
               <div class="tags green"><p>グループ<span>2</span></p></div>
               <div class="tags orange"><p>フリー<span>2</span></p></div>
             </article>
+            <a href="" class="more"><img src="images/common/arrow-pointing-right.png" alt=""></a>
           </div>
           <div class="abroad-items">
             <figure>
@@ -327,7 +326,7 @@
           <div class="fb-content">
             <h2>Facebook</h2>
             <span>当校のオフィシャルFacebookページです。イベントや色々な情報を更新しています。</span>
-            <div class="fb-page" data-href="https://web.facebook.com/Bayside-English-CebuINC-Eng-325686707789089/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+            <div class="fb-page" data-href="https://www.facebook.com/Bayside-English-CebuINC-Eng-325686707789089/" data-tabs="timeline" data-width="380" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Bayside-English-CebuINC-Eng-325686707789089/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Bayside-English-CebuINC-Eng-325686707789089/">Bayside English Cebu,INC - Eng</a></blockquote></div>
           </div>
         </div>
       </div>
@@ -355,5 +354,16 @@
   <p class="copyright">Copyright 2016 Bayside English Cebu, Inc. | All Rights Reserved</p>
 </footer> <!-- #footer -->
 </div> <!-- // #main-wrap -->
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+   <!-- <script type="text/javascript" src="js/jquery.js" charset="utf-8"></script> -->
+   <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
+   <script>
+    $(document).ready(function() {
+      AOS.init();
+    });
+   </script>
 </body>
 </html>

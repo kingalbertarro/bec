@@ -1,4 +1,4 @@
-// .container { display: block; margin: 0 auto; width: (2300px/2); }
+  // .container { display: block; margin: 0 auto; width: (2300px/2); }
 #header {
   margin-top: (64px/2);
   overflow: hidden;
@@ -34,10 +34,21 @@
         width: (242px/2);
         &:last-child { margin-right: 0; }
         &:hover { opacity: .8; }
-        &:after {
-          content: '\203A';
-          font-size: (40px/2);
-          position: absolute;
+        span {
+          display: block;
+          position: relative;
+          margin-left: (-29px/2);
+          &:after {
+            background-image: url('../images/common/chevron-white.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            content: '';
+            height: (23px/2);
+            margin-left: 5px;
+            position: absolute;
+            width: (14px/2);
+          }
         }
       }
       .primary { background-color: #25529a; }
@@ -59,9 +70,26 @@
       border-left: 1px dotted #000;
       border-top: 1px solid #fff;
       display: block;
+      overflow: hidden;
       padding: 0 (38px/2);
+      position: relative;
       float: left;
-      &:last-child { border-right: 1px dotted #000; }
+      &:last-child {
+        border-right: 1px dotted #000;
+        &:before {
+          background-image: url('../images/common/icn_globe.png');
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: 15px 15px;
+          content: '';
+          display: block;
+          float: left;
+          margin-top: 5px;
+          margin-right: 8px;
+          height: 15px;
+          width: 15px;
+        }
+      }
       a {
         color: #3a3a3a;
         font-size:(27px/2);
@@ -204,29 +232,32 @@
           text-align: center;
           transition: .3s;
           width: (414px/2);
+          &:after {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            content: '';
+            display: block;
+            height: (24px/2);
+            position: absolute;
+            right: (20px/2);
+            top: 36%;
+            width: (14px/2);
+          }
           &.primary {
             border: (4px/2) solid #23ac38;
             color: #23ac38;
-            &:hover {
-              background-color: #23ac38;
-              color: #fff;
-            }
+            &:after { background-image: url('../images/common/chevron-green.png'); }
           }
           &.secondary {
             border: (4px/2) solid #aa6b23;
             color: #aa6b23;
-            &:hover {
-              background-color: #aa6b23;
-              color: #fff;
-            }
+            &:after { background-image: url('../images/common/chevron-brown.png'); }
           }
           &.tertiary {
             border: (4px/2) solid #076292;
             color: #076292;
-            &:hover {
-              background-color: #076292;
-              color: #fff;
-            }
+            &:after { background-image: url('../images/common/chevron-blue.png'); }
           }
         }
       }
@@ -338,6 +369,11 @@
       background-color: #9c9b9b;
       color: #fff;
     }
+  }
+  .more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   .abroad-list {
     display: block;
