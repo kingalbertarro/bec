@@ -1,37 +1,40 @@
 /*
-Error: Invalid CSS after "<": expected "{", was "!DOCTYPE html>"
-        on line 1 of C:\wamp64\www\bec\index.html
+Error: Invalid US-ASCII character "\xE7"
+        on line 35 of /Applications/MAMP/htdocs/bec/index.html
 
-1: <!DOCTYPE html>
-2: <head>
-3:  <title>Bayside English Cebu</title>
-4:  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-5:  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-6:  <meta name="viewport" content="width=device-width, initial-scale=1">
+30:     <section id="header-con"> <!-- #header-con -->
+31:       <figure class="logo-header">
+32:          <img src="images/common/logo.png" alt="">
+33:       </figure>
+34:       <div class="links">
+35:         <a href="" class="btn primary"><span>無料見積</span></a>
+36:         <a href="" class="btn secondary"><span>お問い合わせ</span></a>
+37:         <a href="" class="btn tertiary"><span>お申し込み</span></a>
+38:       </div>
+39:     </section> <!-- // #header-con -->
+40:   </div>
 
 Backtrace:
-C:\wamp64\www\bec\index.html:1
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:677:in `block'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:686:in `block_contents'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.5/bin/sass:13:in `<top (required)>'
-C:/Ruby24-x64/bin/sass:23:in `load'
-C:/Ruby24-x64/bin/sass:23:in `<main>'
+/Applications/MAMP/htdocs/bec/index.html:35
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/util.rb:1043:in `rescue in block in find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/util.rb:1040:in `block in find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/util.rb:1039:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/util.rb:1039:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/util.rb:1039:in `find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/util.rb:767:in `check_sass_encoding'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:444:in `check_encoding!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:400:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/exec/sass_scss.rb:391:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.5.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:22:in `load'
+/usr/local/bin/sass:22:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"<\": expected \"{\", was \"!DOCTYPE html>\"\A         on line 1 of C:\wamp64\www\bec\index.html\A \A 1: <!DOCTYPE html>\A 2: <head>\A 3:  <title>Bayside English Cebu</title>\A 4:  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\A 5:  <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\">\A 6:  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"; }
+  content: "Error: Invalid US-ASCII character \"\xE7\"\A         on line 35 of /Applications/MAMP/htdocs/bec/index.html\A \A 30:     <section id=\"header-con\"> <!-- #header-con -->\A 31:       <figure class=\"logo-header\">\A 32:          <img src=\"images/common/logo.png\" alt=\"\">\A 33:       </figure>\A 34:       <div class=\"links\">\A 35:         <a href=\"\" class=\"btn primary\"><span>無料見積</span></a>\A 36:         <a href=\"\" class=\"btn secondary\"><span>お問い合わせ</span></a>\A 37:         <a href=\"\" class=\"btn tertiary\"><span>お申し込み</span></a>\A 38:       </div>\A 39:     </section> <!-- // #header-con -->\A 40:   </div>"; }
