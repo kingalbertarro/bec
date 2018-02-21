@@ -1,59 +1,5 @@
-<!DOCTYPE html>
-<head>
- <title>Bayside English Cebu</title>
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta http-equiv="Content-type" content="text/html; charset=utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
-
- <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" href="css/common.min.css">
- <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
- <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
-
-</head>
-<body id="top">
-
-<!-- Facebook SNS -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12&appId=1448963802032805&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-<div id="main-wrap"> <!-- #main-wrap -->
-
-<header id="header"> <!-- #header -->
-  <div class="container">
-    <section id="header-con"> <!-- #header-con -->
-      <figure class="logo-header">
-         <img src="images/common/logo.png" alt="">
-      </figure>
-      <div class="links">
-        <a href="" class="btn primary"><span>無料見積</span></a>
-        <a href="" class="btn secondary"><span>お問い合わせ</span></a>
-        <a href="" class="btn tertiary"><span>お申し込み</span></a>
-      </div>
-    </section> <!-- // #header-con -->
-  </div>
-</header> <!-- // #header -->
-
-<nav class="nav"> <!-- .nav -->
-    <ul class="nav-menu"> <!-- .nav-menu -->
-      <li class="nav-menu-items"><a href="">学校紹介</a></li>
-      <li class="nav-menu-items"><a href="">キャンパス</a></li>
-      <li class="nav-menu-items"><a href="">コース・料金</a></li>
-      <li class="nav-menu-items"><a href="">留学生活</a></li>
-      <li class="nav-menu-items"><a href="">BLOG</a></li>
-      <li class="nav-menu-items"><a href="">Q&A</a></li>
-      <li class="nav-menu-items"><a href="">団体研修・企業研修</a></li>
-      <li class="nav-menu-items"><a href="">English</a></li>
-     </ul> <!-- // .nav-menu -->
-</nav> <!-- // .nav -->
+<!-- HEADER -->
+<?php include 'header.php'; ?>
 
 <div id="banner"> <!-- #banner -->
   <div class="banner-slider">
@@ -77,7 +23,7 @@
 
 <div id="contents-wrap"> <!-- #contents-wrap -->
   <div id="main-contents"> <!-- #main-contents -->
-    <section id="introduction"> <!-- introduction -->
+    <section id="introduction" data-aos="fade-up" data-aos-offset="600" data-aos-duration="900" data-aos-anchor=".banner-slider"> <!-- introduction -->
       <div class="container">
         <h1>リゾートエリアでしっかり学べるBayside English Cebu</h1>
         <p>
@@ -128,7 +74,7 @@
             <article>
               <h3 class="rpc"><img src="images/common/title01.png" alt=""></h3>
               <p>RPCキャンパスは、敷地内にインターナショナルスクールが併設しており、国際交流盛んな活気あるキャンパスです。</p>
-              <a href="" class="btn primary">詳しくはこちら</a>
+              <a class="button primary" href="#"><span>詳しくはこちら</span></a>
             </article>
           </div>
           <div class="campus-list-items">
@@ -138,7 +84,7 @@
             <article>
               <h3 class="premium"><img src="images/common/title02.png" alt=""></h3>
               <p>大人のためのキャンパスです。静かなロケーションの中でセブリゾートを十分に感じることのできるキャンパスです。</p>
-              <a href="" class="btn secondary">詳しくはこちら</a>
+              <a class="button secondary" href="#"><span>詳しくはこちら</span></a>
             </article>
           </div>
           <div class="campus-list-items">
@@ -148,7 +94,7 @@
             <article>
               <h3 class="active"><img src="images/common/title03.png" alt=""></h3>
               <p>Activeキャンパスは、スピーキングスキルに特化したアクティブラーニング実践型キャンパスになります。</p>
-              <a href="" class="btn tertiary">詳しくはこちら</a>
+              <a class="button tertiary" href="#"><span>詳しくはこちら</span></a>
             </article>
           </div>
         </div>
@@ -308,7 +254,7 @@
             <a href="" class="more"><img src="images/common/arrow-pointing-right.png" alt=""></a>
           </div>
         </div>
-        <a href="" class="btn">各コースの詳細はこちら</a>
+        <a class="button" href="#"><span>詳しくはこちら</span></a>
       </div>
     </section> <!-- // #abroad -->
     <section id="sns"> <!-- #sns -->
@@ -358,106 +304,8 @@
       <script src="https://snapwidget.com/js/snapwidget.js"></script>
       <iframe src="https://snapwidget.com/embed/422975" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
     </section> <!-- // #insta-feed -->
-    <section id="google-map"> <!-- #google-map -->
-      <figure>
-        <img src="images/common/map.jpg" alt="">
-      </figure>
-    </section> <!-- // #google-map -->
   </div> <!-- // #main-contents -->
 </div> <!-- // #contents-wrap -->
 
- <footer id="footer"> <!-- #footer -->
-  <div class="sitemap-wrap">
-    <div class="company-info">
-      <h3>Bayside English Cebu</h3>
-      <span class="phone">032-494-3632</span>
-      <p class="address">Punta engano, Lapu-Lapu City 6015<br>Cebu, The Philippines</p>
-      <div class="social-btn">
-        <a href=""><img src="images/common/icn-ig.png" alt=""></a>
-        <a href=""><img src="images/common/icn-fb02.png" alt=""></a>
-        <a href=""><img src="images/common/icn-tw.png" alt=""></a>
-      </div>
-    </div>
-    <div class="about-us">
-      <h3>ABOUT US</h3>
-      <ul>
-        <li><a href="">学校紹介</a></li>
-        <li><a href="">特徴</a></li>
-        <li><a href="">教師紹介</a></li>
-        <li><a href="">キャンパス</a></li>
-        <li><a href="">Premium Resort Campus</a></li>
-        <li><a href="">RPC Campus</a></li>
-        <li><a href="">アクセス</a></li>
-      </ul>
-    </div>
-    <div class="course">
-      <h3>COURSE</h3>
-      <ul>
-        <li><a href="">コース・料金</a></li>
-        <li><a href="">General Course</a></li>
-        <li><a href="">教師紹介</a></li>
-        <li><a href="">General Plus</a></li>
-        <li><a href="">Intensive Course</a></li>
-        <li><a href="">Absolute Course</a></li>
-        <li><a href="">Relax Course</a></li>
-        <li><a href="">Attend Course</a></li>
-        <li><a href="">Babysitter Course</a></li>
-        <li><a href="">Business General Course</a></li>
-        <li><a href="">Business Absolute Course</a></li>
-      </ul>
-    </div>
-    <div class="flow">
-      <h3>FLOW</h3>
-      <ul>
-        <li><a href="">留学生活</a></li>
-        <li><a href="">General Course</a></li>
-        <li><a href="">教師紹介</a></li>
-        <li><a href="">ご留学までの流れ</a></li>
-        <li><a href="">週間の流れ</a></li>
-        <li><a href="">blog</a></li>
-      </ul>
-    </div>
-    <div class="support">
-      <h3>SUPPORT</h3>
-      <ul>
-        <li><a href="">Q&A</a></li>
-        <li><a href="">お知らせ</a></li>
-        <li><a href="">お問い合わせ</a></li>
-        <li><a href="">無料見積</a></li>
-        <li><a href="">ご相談</a></li>
-        <li><a href="">お申し込み</a></li>
-        <li><a href="">法人のお客様</a></li>
-      </ul>
-    </div>
-    <div class="other">
-      <ul>
-        <li><a href="">会社概要</a></li>
-        <li><a href="">規約</a></li>
-        <li><a href="">代表メッセージ</a></li>
-      </ul>
-    </div>
-  </div>
-  <p class="copyright">Copyright 2016 Bayside English Cebu, Inc. | All Rights Reserved</p>
-</footer> <!-- #footer -->
-</div> <!-- // #main-wrap -->
-
-  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-   <script type="text/javascript" src="js/main.js" charset="utf-8"></script>
-   <script>
-   $(document).ready(function () {
-     AOS.init();
-
-     $('.banner-slider').slick({
-       infinite: true,
-       slidesToShow: 1,
-       slidesToScroll: 1,
-       centerMode: true,
-       centerPadding: '60px'
-      });
-   });
-   </script>
-</body>
-</html>
+ <!-- FOOTER -->
+ <?php include 'footer.php'; ?>

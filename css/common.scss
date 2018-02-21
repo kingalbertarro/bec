@@ -59,14 +59,13 @@
 }
 
 .nav {
-  border: 1px solid #fff;
+  border-bottom: 1px solid #bababa;
   display: block;
-  margin: (32px/2) auto;
-  width: (1822px/2);
   .nav-menu {
     display: block;
-    margin-left: (14px/2);
+    margin: (32px/2) auto;
     overflow: hidden;
+    width: (1822px/2);
     .nav-menu-items {
       border-left: 1px solid #a4a3a5;
       border-top: 1px solid #fff;
@@ -100,6 +99,62 @@
   }
 }
 
+.sticky-nav {
+  background: rgba(255,255,255,1);
+  border-bottom: 1px solid #bababa;
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  .nav-menu {
+    display: block;
+    margin: (18px/2) auto;
+    overflow: hidden;
+    width: (1792px/2);
+    .nav-menu-items {
+      border-right: 1px solid #a4a3a5;
+      display: block;
+      overflow: hidden;
+      padding: 0 (38px/2);
+      margin-top: 3px;
+      position: relative;
+      float: left;
+      a {
+        color: #3a3a3a;
+        font-size:(24px/2);
+        line-height: (24px/2);
+      }
+      &:first-child { border-left: 1px solid #a4a3a5; }
+    }
+    .tertiary {
+      background-color: #ff9a00;
+      border-radius: 4px;
+      color: #fff;
+      display: block;
+      float: right;
+      font-size: (24px/2);
+      line-height: (24px/2);
+      padding: (18px/2) (38px/2) (18px/2) (20px/2);
+      position: relative;
+      text-align: center;
+      width: (216px/2);
+      &:after {
+        background-image: url('../images/common/chevron-white.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        content: '';
+        height: (23px/2);
+        margin-left: 5px;
+        position: absolute;
+        top: 9px;
+        width: (14px/2);
+      }
+    }
+  }
+}
+
 #banner {
   display: block;
   overflow: hidden;
@@ -111,11 +166,11 @@
     overflow: hidden;
     padding: 0;
     position: relative;
-    figure {
-      display: block;
-      width: 100%;
-      img { overflow: hidden; width: 100%; }
-    }
+  }
+  figure {
+    display: block;
+    width: 100%;
+    img { overflow: hidden; width: 100%; }
   }
 }
 /* INTRODUCTION */
@@ -234,20 +289,28 @@
           font-size: (30px/2);
           line-height: (48px/2);
         }
-        .btn {
+        .button {
           border-radius: 6px;
           display: block;
           font-size: (30px/2);
           font-weight: bold;
           line-height: (30px/2);
-          margin: (30px/2) auto 0;
-          overflow: hidden;
-          padding: (24px/2) 0;
-          position: relative;
+          width: 200px;
+          height: 43px;
           text-align: center;
-          transition: .3s;
-          width: (414px/2);
-          &:after {
+          text-decoration: none;
+          line-height: 54px;
+          margin: (30px/2) auto 0;
+          outline: none;
+          position: relative;
+          z-index: 2;
+          background-color: #fff;
+          line-height: 40px;
+          overflow: hidden;
+          span {
+            display: block;
+            position: relative;
+            &:after {
             background-position: center;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -256,25 +319,56 @@
             height: (24px/2);
             position: absolute;
             right: (20px/2);
-            top: 36%;
+            top: 34%;
             width: (14px/2);
+            }
           }
-          &.primary {
-            border: (4px/2) solid #23ac38;
-            color: #23ac38;
-            &:after { background-image: url('../images/common/chevron-green.png'); }
-          }
-          &.secondary {
-            border: (4px/2) solid #aa6b23;
-            color: #aa6b23;
-            &:after { background-image: url('../images/common/chevron-brown.png'); }
-          }
-          &.tertiary {
-            border: (4px/2) solid #076292;
-            color: #076292;
-            &:after { background-image: url('../images/common/chevron-blue.png'); }
-          }
+          &:hover {span{&:after {background-image: url('../images/common/chevron-white.png');top: 32%;}}}
         }
+        .primary {
+          border: (4px/2) solid #23ac38;
+          color: #23ac38;
+          span { &:after { background-image: url('../images/common/chevron-green.png'); } }
+        }
+        .secondary {
+          border: (4px/2) solid #aa6b23;
+          color: #aa6b23;
+          span { &:after { background-image: url('../images/common/chevron-brown.png'); } }
+        }
+        .tertiary {
+          border: (4px/2) solid #076292;
+          color: #076292;
+          span { &:after { background-image: url('../images/common/chevron-blue.png'); } }
+        }
+        .button::before,
+        .button::after {
+          position: absolute;
+          z-index: -1;
+          display: block;
+          content: '';
+        }
+        .button,
+        .button::before,
+        .button::after {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-transition: all .3s;
+          transition: all .3s;
+        }
+        .button:hover { color: #fff; }
+        .button::after {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          -webkit-transform: scale(.5);
+          transform: scale(.5);
+        }
+        .button:hover::after { -webkit-transform: scale(1); transform: scale(1); }
+        .primary:hover::after { background: #23ac38; }
+        .secondary:hover::after { background: #aa6b23; }
+        .tertiary:hover::after { background: #076292; }
       }
     }
   }
@@ -367,22 +461,30 @@
     margin-bottom: (140px/2);
     text-align: center;
   }
-  .btn {
-    background-color: #fff;
-    border: (2px/2) solid #9c9b9b;
+  .button {
+    border: (4px/2) solid #5a5a5a;
     border-radius: 6px;
     color: #5a5a5a;
     display: block;
     font-size: (30px/2);
     font-weight: bold;
     line-height: (30px/2);
-    margin: 0 auto;
-    padding: (40px/2) 0;
-    position: relative;
-    text-align: center;
-    transition: .3s;
     width: (620px/2);
-    &:after {
+    height: 53px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 54px;
+    margin: (30px/2) auto 0;
+    outline: none;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    line-height: 50px;
+    overflow: hidden;
+    span {
+      display: block;
+      position: relative;
+      &:after {
       background-image: url('../images/common/chevron-grey.png');
       background-position: center;
       background-repeat: no-repeat;
@@ -392,9 +494,41 @@
       height: (24px/2);
       position: absolute;
       right: (20px/2);
-      top: 40%;
+      top: 38%;
       width: (14px/2);
+      }
     }
+    &:hover {span{&:after {background-image: url('../images/common/chevron-white.png');top: 35%;}}}
+  }
+  .button::before,
+  .button::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+  }
+  .button,
+  .button::before,
+  .button::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .button:hover { color: #fff; }
+  .button::after {
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+  }
+  .button:hover::after {
+    background: #5a5a5a;
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
   .more {
     bottom: (32px/2);
@@ -453,11 +587,12 @@
           p {
             display: block;
             font-size: (12px/2);
+            line-height: (12px/2);
             left: 0;
             margin: 0;
             padding: 0;
             position: absolute;
-            top: 14px;
+            top: 16px;
             text-align: center;
             width: 100%;
             span {
@@ -759,3 +894,111 @@
     text-align: center;
   }
 }
+
+
+
+/* MEDIA QUERRIES HERE */
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  #introduction { padding: 25px 0; }
+  #introduction h1 {
+    font-size: 21px;
+    line-height: 42px;
+    margin-bottom: (30px/2);
+  }
+  #introduction p {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 0 auto;
+    text-align: left;
+    width: 90%;
+  }
+  #introduction .features {
+    margin: 20px auto 0;
+    width: 85%;
+  }
+  #introduction .features .features-items {
+    margin-bottom: 20px;
+    margin-right: 10%;
+    width: 45%;
+  }
+  #introduction .features .features-items:nth-child(2n+2) { margin-right: 0; }
+  #introduction .features .features-items span {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 9px;
+  }
+  #introduction .features .features-items h2 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  #campus { padding: 25px 0 50px; }
+  #campus h2 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  #campus h2 span {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  #campus .campus-list {
+    margin: 20px auto 0;
+    width: 90%;
+  }
+  #campus .campus-list .campus-list-items {
+    margin: 0 0 35px 0;
+    width: 100%;
+  }
+  #campus .campus-list .campus-list-items article h3 { margin-bottom: 8px; }
+  #campus .campus-list .campus-list-items article h3.rpc { width: 151px; }
+  #campus .campus-list .campus-list-items article h3.premium { width: 270px; }
+  #campus .campus-list .campus-list-items article h3.active { width: 160.8px; }
+  #campus .campus-list .campus-list-items article p { font-size: 12px; line-height: 20px; }
+  #choose { padding: 20px 0 25px; }
+  #choose h2 {
+    font-size: 21px;
+    line-height: 42px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  #choose .choose-list {
+    margin: 25px auto 0;
+    width: 85%;
+  }
+  #choose .choose-list .choose-items {
+    background-color: #fff;
+    display: block;
+    float: left;
+    height: 310px;
+    margin: 0 0 30px 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.2);
+    padding: 0 15px;
+    position: relative;
+    width: 100%;
+  }
+  #choose .choose-list .choose-items article h3 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  #choose .choose-list .choose-items article p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
